@@ -4,6 +4,8 @@ The code within this repository is tailored for sending messages to multiple con
 1. Upon the initial run, you'll be required to scan the WhatsApp Web QR code.
 2. The contact names must precisely match the saved names on your phone, including letter case sensitivity.
 
+This code will run perfectly in MacOS. If you're using Windows or Linux, make sure to change the webdriver path accordingly.
+
 ## Install
 
 <b>Install Selenium:</b> Begin by installing the Selenium Python package. You can do this using pip, the Python package manager:
@@ -23,10 +25,11 @@ Make sure you have Homebrew installed on your macOS system before using the brew
 from selenium import webdriver
 driver = webdriver.Chrome(executable_path='/path/to/chromedriver')
 ```
-You have the option to simplify the process by relocating your WebDriver file to the /usr/local/bin/ directory. This eliminates the need to specify the path every time you use it, as I have done in my code. In order to do so, you've to run the following command in your terminal.
+You have the option to simplify the process by relocating your WebDriver file to the `/usr/local/bin/` directory. This eliminates the need to specify the path every time you use it, as I have done in my code. In order to do so, you've to run the following command in your terminal.
 ```bash
-sudo mv /path/to/chromedriver  /usr/local/bin/
+sudo mv <path to chromedriver>  /usr/local/bin/
 ```
+p.s. you don't have to add the `<` or`>` in your bash command.
 
 ## Simple Demo
 
